@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body{
+		background: linear-gradient(90deg, #aea4e3, #d3ffe8);
+		margin: 0 auto;
+		max-width: 1200px;
+		min-width: 600px;
+	}
+	.nav-button1-2{
+		/*float: left;*/
+		/*background-color: green;*/
+		margin: 0px 5px 5px 10px;
+	}
+	.nav-button3{
+		/*float: right;*/
+		/*background-color: green;*/
+		margin: 0px 5px 5px 10px;
+		cursor: pointer;
+	}
+	/* main{
+		/* width: 1300px; */
+		/* height: 500px; */
+		/* background-color: grey; */
+		/* margin:20px auto; */
+	} */
+	#container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.menu{
+		height: 20px;
+		margin: 0 0 20px 0;
+		padding: 0;
+		display: flex;
+	}
+	.submenu{
+	display: none;
+	z-index: 999999;
+	position: fixed;
+	background-color: rgb(160, 160, 160);
+
+	/*float: left;*/
+	/*position: absolute;*/
+	}
+	/*li ul {
+		display: none;
+		float: left;
+	}*/
+	/*.menu-li3{
+		margin: 0 1000px 0 0 ;
+	}*/
+	.menu-li1-2{
+		margin: 0 10px 0 0px;
+		list-style: none;
+		/*position: relative;*/
+		height: 40px;
+		line-height: 40px;
+		/* float: left; */
+		background-color: #59c859;
+		color: #f6f6f6;
+	}
+	.menu-li3{
+		margin-left: auto;
+		list-style: none;
+		/*position: relative;*/
+		height: 40px;
+		line-height: 40px;
+		/* float: left; */
+		background-color: #59c859;
+		color: #f6f6f6;
+	}
+	.submenu li {
+		/*position: fixed;*/
+		margin:  -5px 0 0 -40px;
+		/* float: none; */
+		background-color: #59c859;
+		height: 40px;
+		line-height: 40px;
+		cursor: pointer;
+	}
+	.submenu li:hover{
+		color:blue;
+	}
+	li{
+		/*margin: 0px;*/
+		/*float: left;*/
+		list-style: none;
+
+	}
+	li:hover ul{
+		display:block; 
+	}
+	nav{
+		/* width: 1300px; */
+		/* height: 20px; */
+		margin-top: 10px;
+		/* display: flex; */
+	}
+	#submenu1{
+		width: 47px;
+	}
+	#submenu2{
+		width: 80px;
+	}
+	.timer{
+		text-align: center;
+	}
+	.card {
+        height: 128px;
+        width: 128px;
+        border: 15px solid black;
+        perspective: 150px;
+	    border-radius: 20px;
+    }
+    .cardFrontSide {
+      /* border: 1px solid black; */
+        transition: 2s;
+        backface-visibility: hidden;
+        position: absolute;
+    }
+    .cardBackSide{
+      /* border: 1px solid black; */
+        transition: 2s;
+	    width: 128px;
+	    height: 128px;
+        backface-visibility: hidden;
+        transform :rotateY(180deg);
+        position: absolute;
+	  /* background-image: url("../public/question.jpg"); */
+    }
+	p{
+		font-size: 1.55rem;
+	}
+	h1{
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li class="menu-li1-2"><div class="nav-button1-2">Skirt Cards</div>
+				<ul class="submenu" id="submenu1">
+					<li id="skirtButton1">
+						Cars
+					</li>
+					<li id="skirtButton2">
+						Emojies
+					</li>
+					<li id="skirtButton3">
+						Minions
+					</li>
+				</ul>
+			</li> 
+			<li class="menu-li1-2"><div class="nav-button1-2">Game Difficulty</div>
+				<ul class="submenu" id="submenu2">
+					<li id="difficultyButton1">
+						Low(5x2)
+					</li>
+					<li id="difficultyButton2">
+						Medium(6x3)
+					</li>
+					<li id="difficultyButton3">
+						Hight(8x3)
+					</li>
+				</ul>
+			</li> 
+			<li class="menu-li3" id="newGameButton"><div class="nav-button3">New Game</div></li>
+		</ul>
+	</nav>
+
+	<div class="container" >
+		<main id="container">
+			<div style="margin: 0 auto;">
+				<h1>Memory Match-Match game!</h3>
+				<p>Memory Match-Match game is a counter game where a point is to find pairs</p>
+				<p>When the game begins, all pictures are hidden</p>
+				<h1>How to play</h1>
+				<p>1. Select two cards to try match cards</p>
+				<p>2. if you match the picture u can go again</p>
+				<p>3. if they dont match computer will turn them</p>
+				<p>4. The player who find all pairs win </p>
+				<p>5. Have fun!</p>
+			</div>
+		</main>
+		<img/>
+	</div>
+<script src="main.js">
+</script>
+</body>
+</html>
